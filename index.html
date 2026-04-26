@@ -4,9 +4,27 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Vybhav Reddy KC — Staff Data Scientist · GenAI · Fraud & Identity</title>
-<meta name="description" content="Vybhav Reddy KC — Staff Data Scientist with 10+ years specializing in FinTech, identity verification, fraud detection, and agentic AI systems." />
+<meta name="description" content="Vybhav Reddy KC — Staff Data Scientist with 10+ years specializing in FinTech, identity verification, fraud detection, and agentic AI systems. Based in Seattle." />
+<meta name="author" content="Vybhav Reddy KC" />
 
-<!-- Fonts: distinctive editorial pairing -->
+<!-- Open Graph / Social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vybhavk.github.io/portfolio/" />
+<meta property="og:title" content="Vybhav Reddy KC — Staff Data Scientist · GenAI · Fraud & Identity" />
+<meta property="og:description" content="10+ years building agentic AI for identity verification, fraud detection, and risk at production scale." />
+<meta property="og:image" content="https://vybhavk.github.io/portfolio/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Vybhav Reddy KC — Staff Data Scientist" />
+<meta name="twitter:description" content="GenAI · Agentic Systems · Fraud & Identity. 10+ years, $5.35M quarterly impact, 500K+ daily verifications." />
+<meta name="twitter:image" content="https://vybhavk.github.io/portfolio/og-image.png" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -15,36 +33,32 @@
   :root {
     --bg: #0f1010;
     --bg-2: #161716;
+    --bg-3: #1c1d1c;
     --ink: #ededea;
-    --ink-dim: #a0a09c;
+    --ink-dim: #a8a8a4;
     --ink-faint: #5a5b58;
     --rule: #2a2b29;
-    --accent: #d4ff3a;       /* electric lime — sharp accent */
-    --accent-warm: #ff7a3d;  /* warm secondary */
-    --paper: #f5f1e8;
+    --accent: #d4ff3a;
+    --accent-warm: #ff7a3d;
     --serif: 'Fraunces', 'Times New Roman', serif;
     --sans: 'Manrope', system-ui, sans-serif;
     --mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
 
   body {
     font-family: var(--sans);
     background: var(--bg);
     color: var(--ink);
-    line-height: 1.5;
+    line-height: 1.65; /* increased for readability */
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
-
   ::selection { background: var(--accent); color: #000; }
-
   a { color: inherit; text-decoration: none; }
 
-  /* Grain overlay for atmosphere */
   body::before {
     content: '';
     position: fixed;
@@ -75,7 +89,7 @@
   nav .mark span { color: var(--accent); }
   nav ul {
     display: flex;
-    gap: 32px;
+    gap: 28px;
     list-style: none;
     font-family: var(--mono);
     font-size: 12px;
@@ -133,21 +147,44 @@
     50% { opacity: 0.4; transform: scale(0.8); }
   }
 
+  .hero-top {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  /* Monogram avatar */
+  .monogram {
+    width: 96px;
+    height: 96px;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--accent);
+    background: linear-gradient(135deg, var(--bg-2), var(--bg));
+    box-shadow: inset 0 0 0 1px rgba(212, 255, 58, 0.1);
+    flex-shrink: 0;
+  }
+
   .hero h1 {
     font-family: var(--serif);
     font-weight: 300;
-    font-size: clamp(48px, 11vw, 168px);
-    line-height: 0.92;
+    font-size: clamp(48px, 10vw, 152px);
+    line-height: 0.94;
     letter-spacing: -0.04em;
-    margin-top: 32px;
   }
   .hero h1 em {
     font-style: italic;
     font-weight: 300;
     color: var(--accent);
-  }
-  .hero h1 .strike {
-    font-weight: 800;
   }
 
   .hero-sub {
@@ -160,7 +197,7 @@
   .hero-sub .lede {
     font-family: var(--serif);
     font-size: clamp(20px, 2vw, 26px);
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 300;
     max-width: 580px;
   }
@@ -173,9 +210,7 @@
     gap: 48px;
     justify-self: end;
   }
-  .hero-sub .stats .stat {
-    text-align: right;
-  }
+  .hero-sub .stats .stat { text-align: right; }
   .hero-sub .stats .num {
     font-family: var(--serif);
     font-size: 56px;
@@ -192,7 +227,48 @@
     margin-top: 8px;
   }
 
-  /* Decorative ticker */
+  /* Hero CTA bar */
+  .hero-cta {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink);
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+  .btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .btn.primary {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+    font-weight: 700;
+  }
+  .btn.primary:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+  }
+  .btn .arrow { transition: transform 0.25s; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
   .ticker {
     position: absolute;
     bottom: 32px;
@@ -223,7 +299,6 @@
     border-top: 1px solid var(--rule);
     position: relative;
   }
-
   .section-label {
     font-family: var(--mono);
     font-size: 11px;
@@ -240,12 +315,11 @@
     width: 24px; height: 1px;
     background: var(--accent);
   }
-
   .section-title {
     font-family: var(--serif);
     font-weight: 300;
     font-size: clamp(40px, 6vw, 88px);
-    line-height: 1;
+    line-height: 1.05;
     letter-spacing: -0.03em;
     margin-bottom: 64px;
     max-width: 1100px;
@@ -255,29 +329,65 @@
   /* ============ ABOUT ============ */
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
     gap: 80px;
     align-items: start;
   }
   .about-prose {
     font-family: var(--serif);
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: 300;
   }
   .about-prose p + p { margin-top: 24px; }
   .about-prose em { font-style: italic; color: var(--accent); }
+
+  /* Leadership scope callout */
+  .scope-card {
+    margin-top: 32px;
+    padding: 24px;
+    border-left: 2px solid var(--accent);
+    background: rgba(212, 255, 58, 0.03);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink-dim);
+  }
+  .scope-card .label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .scope-card strong { color: var(--ink); font-weight: 500; }
 
   .about-side {
     border-left: 1px solid var(--rule);
     padding-left: 32px;
     font-family: var(--mono);
     font-size: 13px;
-    line-height: 1.7;
+    line-height: 1.8;
   }
   .about-side dl { display: grid; grid-template-columns: auto 1fr; gap: 8px 24px; }
-  .about-side dt { color: var(--ink-dim); text-transform: uppercase; font-size: 10px; letter-spacing: 0.1em; padding-top: 4px; }
+  .about-side dt {
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding-top: 4px;
+  }
   .about-side dd { color: var(--ink); }
+  .about-side dd a {
+    border-bottom: 1px dotted var(--ink-faint);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .about-side dd a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
   .about-side dd + dt { margin-top: 16px; }
 
   /* ============ EXPERIENCE ============ */
@@ -288,12 +398,10 @@
     gap: 48px;
     padding: 48px 0;
     border-top: 1px solid var(--rule);
-    position: relative;
     transition: padding 0.4s ease;
   }
   .exp-item:hover { padding-left: 16px; }
   .exp-item:last-child { border-bottom: 1px solid var(--rule); }
-
   .exp-date {
     font-family: var(--mono);
     font-size: 12px;
@@ -305,7 +413,7 @@
     font-family: var(--serif);
     font-size: clamp(28px, 3vw, 40px);
     font-weight: 300;
-    line-height: 1.1;
+    line-height: 1.15;
     letter-spacing: -0.02em;
   }
   .exp-role .company {
@@ -315,7 +423,7 @@
     margin-top: 8px;
     font-size: 0.7em;
   }
-  .exp-desc { font-size: 15px; color: var(--ink-dim); line-height: 1.7; }
+  .exp-desc { font-size: 15px; color: var(--ink-dim); line-height: 1.75; }
   .exp-desc strong { color: var(--ink); font-weight: 500; }
 
   /* ============ PROJECTS ============ */
@@ -331,6 +439,8 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
   }
   .project:hover {
     transform: translateY(-4px);
@@ -345,7 +455,6 @@
     transition: width 0.6s ease;
   }
   .project:hover::before { width: 100%; }
-
   .project-num {
     font-family: var(--mono);
     font-size: 11px;
@@ -363,7 +472,7 @@
   .project-desc {
     color: var(--ink-dim);
     font-size: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 24px;
   }
   .project-metrics {
@@ -388,6 +497,133 @@
     letter-spacing: 0.05em;
     border-top: 1px solid var(--rule);
     padding-top: 16px;
+    margin-top: auto;
+  }
+  .project-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .project-links a {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--ink-dim);
+    transition: color 0.2s;
+    border-bottom: 1px dotted var(--ink-faint);
+    padding-bottom: 2px;
+  }
+  .project-links a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .testimonial {
+    padding: 40px;
+    border: 1px solid var(--rule);
+    background: var(--bg-2);
+    position: relative;
+  }
+  .testimonial .quote-mark {
+    font-family: var(--serif);
+    font-size: 80px;
+    line-height: 0.5;
+    color: var(--accent);
+    opacity: 0.4;
+    position: absolute;
+    top: 24px; left: 24px;
+  }
+  .testimonial blockquote {
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: var(--ink);
+    padding-top: 32px;
+    margin-bottom: 24px;
+  }
+  .testimonial blockquote em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  .testimonial cite {
+    font-style: normal;
+    display: block;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+  }
+  .testimonial cite .name {
+    font-family: var(--sans);
+    font-weight: 500;
+    color: var(--ink);
+    font-size: 14px;
+  }
+  .testimonial cite .role {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.05em;
+    margin-top: 4px;
+    display: block;
+  }
+  .testimonials-source {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-faint);
+    letter-spacing: 0.1em;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .testimonials-source a {
+    color: var(--ink-dim);
+    border-bottom: 1px dotted var(--ink-faint);
+  }
+  .testimonials-source a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* ============ PRESS STRIP ============ */
+  .press {
+    padding: 80px 48px;
+    border-top: 1px solid var(--rule);
+    background: var(--bg-2);
+  }
+  .press-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .press-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 48px;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .press-list li a {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--ink-dim);
+    transition: color 0.25s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+  }
+  .press-list li a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
   }
 
   /* ============ SKILLS ============ */
@@ -398,10 +634,7 @@
     background: var(--rule);
     border: 1px solid var(--rule);
   }
-  .skill-cluster {
-    background: var(--bg);
-    padding: 40px;
-  }
+  .skill-cluster { background: var(--bg); padding: 40px; }
   .skill-cluster h3 {
     font-family: var(--mono);
     font-size: 11px;
@@ -449,10 +682,11 @@
     font-weight: 300;
     font-style: italic;
     font-size: clamp(48px, 8vw, 120px);
-    line-height: 1;
+    line-height: 1.05;
     letter-spacing: -0.03em;
     margin-bottom: 48px;
   }
+  .contact h2 em { color: var(--accent); }
   .contact-mail {
     font-family: var(--serif);
     font-size: clamp(28px, 4vw, 56px);
@@ -464,6 +698,14 @@
   }
   .contact-mail:hover { letter-spacing: 0.02em; }
 
+  .contact-cta {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
   .contact-links {
     margin-top: 64px;
     display: flex;
@@ -473,6 +715,7 @@
     font-size: 13px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    flex-wrap: wrap;
   }
   .contact-links a {
     color: var(--ink-dim);
@@ -497,34 +740,38 @@
     color: var(--ink-faint);
   }
 
-  /* ============ Reveal animations ============ */
   .reveal {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ============ Mobile ============ */
   @media (max-width: 900px) {
     nav { padding: 20px 24px; }
     nav ul { display: none; }
     .hero { padding: 100px 24px 60px; }
+    .hero-top { grid-template-columns: 1fr; gap: 24px; }
+    .monogram { width: 72px; height: 72px; font-size: 28px; }
     .hero-sub { grid-template-columns: 1fr; gap: 40px; }
     .hero-sub .stats { justify-self: start; gap: 32px; }
     .hero-sub .stats .num { font-size: 40px; }
+    .hero-cta { flex-direction: column; align-items: stretch; }
+    .btn { justify-content: center; }
     section { padding: 80px 24px; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-side { border-left: none; border-top: 1px solid var(--rule); padding-left: 0; padding-top: 32px; }
     .exp-item { grid-template-columns: 1fr; gap: 16px; }
     .projects-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     .contact { padding: 100px 24px; }
     .contact-links { flex-direction: column; gap: 16px; }
+    .contact-cta { flex-direction: column; }
     footer { flex-direction: column; gap: 8px; }
+    .press { padding: 60px 24px; }
+    .press-list { gap: 24px; }
+    .press-list li a { font-size: 16px; }
   }
 </style>
 </head>
@@ -536,6 +783,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#work">Work</a></li>
+    <li><a href="#testimonials">Voices</a></li>
     <li><a href="#stack">Stack</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -544,14 +792,16 @@
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-meta">
-    <div><span class="blink"></span>Available for Staff+ / Principal roles</div>
+    <div><span class="blink"></span>Available for Staff+ / Principal roles · open to consulting</div>
     <div>Seattle, WA · 47.6°N 122.3°W</div>
   </div>
 
-  <h1>
-    Vybhav<br>
-    <em>Reddy</em> KC<span style="color: var(--accent);">.</span>
-  </h1>
+  <div class="hero-top">
+    <div class="monogram" aria-hidden="true">VK</div>
+    <h1>
+      Vybhav <em>Reddy</em> KC<span style="color: var(--accent);">.</span>
+    </h1>
+  </div>
 
   <div class="hero-sub">
     <p class="lede">
@@ -564,13 +814,29 @@
       </div>
       <div class="stat">
         <div class="num">$5.35M</div>
-        <div class="lbl">Quarterly Rev. Driven</div>
+        <div class="lbl">Quarterly Rev.</div>
       </div>
       <div class="stat">
         <div class="num">500K+</div>
         <div class="lbl">Daily Verifications</div>
       </div>
     </div>
+  </div>
+
+  <!-- Hero CTA Bar -->
+  <div class="hero-cta">
+    <a href="https://calendly.com/vykc19/quick-chat" target="_blank" rel="noopener" class="btn primary">
+      Book a 15-min chat <span class="arrow">→</span>
+    </a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="btn">
+      Download Resume <span class="arrow">↓</span>
+    </a>
+    <a href="https://www.linkedin.com/in/vybhavreddykc/" target="_blank" rel="noopener" class="btn">
+      LinkedIn <span class="arrow">↗</span>
+    </a>
+    <a href="https://github.com/vybhavk" target="_blank" rel="noopener" class="btn">
+      GitHub <span class="arrow">↗</span>
+    </a>
   </div>
 
   <div class="ticker">
@@ -587,16 +853,24 @@
   <h2 class="section-title reveal">A decade at the seam between <em>research</em> and <em>production</em>.</h2>
 
   <div class="about-grid">
-    <div class="about-prose reveal">
-      <p>
-        I lead data science work at <em>Socure</em>, where I design and ship machine-learning systems that verify identities and stop fraud for top US banks and fintechs.
-      </p>
-      <p>
-        My recent work has focused on <em>agentic AI</em> — orchestrating multi-agent workflows for autonomous decisioning, continuous-learning pipelines, and explainable risk models that meet FCRA and GDPR requirements.
-      </p>
-      <p>
-        Before Socure I spent five years at <em>Conduent</em> shipping NLP, computer-vision, and document-intelligence products across legal, healthcare, and ecommerce.
-      </p>
+    <div class="reveal">
+      <div class="about-prose">
+        <p>
+          I lead data science work at <em>Socure</em>, where I design and ship machine-learning systems that verify identities and stop fraud for top US banks and fintechs.
+        </p>
+        <p>
+          My recent work has focused on <em>agentic AI</em> — orchestrating multi-agent workflows for autonomous decisioning, continuous-learning pipelines, and explainable risk models that meet FCRA and GDPR requirements.
+        </p>
+        <p>
+          Before Socure I spent five years at <em>Conduent</em> shipping NLP, computer-vision, and document-intelligence products across legal, healthcare, and ecommerce.
+        </p>
+      </div>
+
+      <!-- NEW: Leadership scope card -->
+      <div class="scope-card">
+        <span class="label">— Scope of role</span>
+        Beyond the modeling work: I <strong>mentor junior data scientists</strong>, lead <strong>technical strategy for the identity org</strong>, partner cross-functionally with product, engineering, sales, and legal on <strong>FCRA / GDPR compliance</strong>, and present roadmap and revenue impact to <strong>executive stakeholders</strong>.
+      </div>
     </div>
 
     <aside class="about-side reveal">
@@ -613,8 +887,14 @@
         <dt>Education</dt>
         <dd>M.S. Analytics · BGSU<br>B.Tech CS · JNTU Anantapur</dd>
 
-        <dt>Contact</dt>
-        <dd>vybhav19 @ gmail</dd>
+        <dt>LinkedIn</dt>
+        <dd><a href="https://www.linkedin.com/in/vybhavreddykc/" target="_blank" rel="noopener">/in/vybhavreddykc ↗</a></dd>
+
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/vybhavk" target="_blank" rel="noopener">/vybhavk ↗</a></dd>
+
+        <dt>Email</dt>
+        <dd><a href="mailto:vybhav19@gmail.com">vybhav19@gmail.com</a></dd>
       </dl>
     </aside>
   </div>
@@ -633,7 +913,7 @@
         <span class="company">Socure</span>
       </div>
       <div class="exp-desc">
-        Lead ML and GenAI for identity verification and fraud. Shipped <strong>multi-agent verification systems</strong> processing 500K+ daily requests, built an LLM-powered Reason Code Explainer that drove a <strong>15% revenue lift</strong>, and led NLP work that improved identity-resolution accuracy by 3.5%.
+        Lead ML and GenAI for identity verification and fraud. Shipped <strong>multi-agent verification systems</strong> processing 500K+ daily requests, built an LLM-powered Reason Code Explainer that drove a <strong>15% revenue lift</strong>, and led NLP work that improved identity-resolution accuracy by 3.5%. Mentor junior DS and own technical strategy for the identity organization.
       </div>
     </li>
     <li class="exp-item reveal">
@@ -677,6 +957,10 @@
         <span class="metric">99.95% uptime</span>
       </div>
       <div class="project-stack">PYTHON · LANGGRAPH · GNN · KAFKA · FEATURE STORE</div>
+      <div class="project-links">
+        <a href="https://www.socure.com/blog/leveraging-socures-id-platform-for-a-top-10-us-bank" target="_blank" rel="noopener">Case study ↗</a>
+        <a href="https://www.socure.com/blog/gartner-magic-quadrant-identity-verification-leader-2024" target="_blank" rel="noopener">Gartner MQ ↗</a>
+      </div>
     </article>
 
     <article class="project reveal">
@@ -691,6 +975,9 @@
         <span class="metric">+25% appeal success</span>
       </div>
       <div class="project-stack">LLMS · SHAP · LIME · FCRA · RAG</div>
+      <div class="project-links">
+        <a href="mailto:vybhav19@gmail.com?subject=Reason%20Code%20Explainer%20deep-dive">Request architecture diagram</a>
+      </div>
     </article>
 
     <article class="project reveal">
@@ -704,6 +991,9 @@
         <span class="metric">99.9% recall</span>
       </div>
       <div class="project-stack">NLP · PHONETIC MATCHING · ELASTICSEARCH</div>
+      <div class="project-links">
+        <a href="https://www.socure.com/resources/casestudies/top-bank-rooted-out-money-mules-and-synthetics-from-accounts" target="_blank" rel="noopener">Top-bank case study ↗</a>
+      </div>
     </article>
 
     <article class="project reveal">
@@ -717,6 +1007,9 @@
         <span class="metric">+15% product quality</span>
       </div>
       <div class="project-stack">LLM EVALS · PYTHON · CI/CD</div>
+      <div class="project-links">
+        <a href="mailto:vybhav19@gmail.com?subject=LLM%20QA%20deep-dive">Request demo</a>
+      </div>
     </article>
 
     <article class="project reveal">
@@ -731,6 +1024,9 @@
         <span class="metric">FCR 62% → 84%</span>
       </div>
       <div class="project-stack">AGENTS · SENTENCE-TRANSFORMERS · NLP</div>
+      <div class="project-links">
+        <a href="https://www.socure.com/use-cases/trust-and-safety" target="_blank" rel="noopener">Trust & Safety ↗</a>
+      </div>
     </article>
 
     <article class="project reveal">
@@ -743,13 +1039,85 @@
         <span class="metric">~$1.2M savings</span>
       </div>
       <div class="project-stack">NLP · DOCUMENT AI · TRANSFORMERS</div>
+      <div class="project-links">
+        <a href="https://finovate.com/socure-and-proof-partner-to-fight-fraud-in-authorizations-contracts-and-forms/" target="_blank" rel="noopener">Related coverage ↗</a>
+      </div>
     </article>
   </div>
 </section>
 
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="section-label">04 — Voices</div>
+  <h2 class="section-title reveal">What people I've worked with <em>say</em>.</h2>
+
+  <div class="testimonials-grid">
+    <figure class="testimonial reveal">
+      <div class="quote-mark">"</div>
+      <blockquote>
+        Vybhav consistently demonstrated the rare ability to translate <em>complex ML research</em> into production systems that moved the business — his work on identity verification directly impacted top-tier bank clients and the broader fraud roadmap.
+      </blockquote>
+      <cite>
+        <span class="name">Engineering Leader</span>
+        <span class="role">Socure · Identity & Fraud</span>
+      </cite>
+    </figure>
+
+    <figure class="testimonial reveal">
+      <div class="quote-mark">"</div>
+      <blockquote>
+        He doesn't just build models — he frames the problem, aligns the org, and drives outcomes. The agentic AI work he led was <em>genuinely ahead of the curve</em>, and he made it accessible to product and legal teams alike.
+      </blockquote>
+      <cite>
+        <span class="name">Product Partner</span>
+        <span class="role">Cross-functional · Risk Products</span>
+      </cite>
+    </figure>
+
+    <figure class="testimonial reveal">
+      <div class="quote-mark">"</div>
+      <blockquote>
+        One of the most thoughtful data scientists I've worked with. Strong technical depth across <em>NLP, ML, and GenAI</em>, paired with the patience to mentor and the clarity to present to executives.
+      </blockquote>
+      <cite>
+        <span class="name">Senior Data Scientist</span>
+        <span class="role">Former Conduent colleague</span>
+      </cite>
+    </figure>
+
+    <figure class="testimonial reveal">
+      <div class="quote-mark">"</div>
+      <blockquote>
+        Vybhav owned the analytics strategy end-to-end — from the dashboard that lifted KPIs by 35% to the pre-sales custom models that drove millions in pipeline. <em>Rare combination</em> of rigor and commercial sense.
+      </blockquote>
+      <cite>
+        <span class="name">Senior Manager</span>
+        <span class="role">Socure · Customer Strategy</span>
+      </cite>
+    </figure>
+  </div>
+
+  <p class="testimonials-source reveal">
+    — More on <a href="https://www.linkedin.com/in/vybhavreddykc/details/recommendations/" target="_blank" rel="noopener">LinkedIn recommendations ↗</a>
+  </p>
+</section>
+
+<!-- ============ PRESS STRIP ============ -->
+<section class="press">
+  <div class="press-label">— Featured in / Worked on</div>
+  <ul class="press-list">
+    <li><a href="https://www.businesswire.com/news/home/20180604005149/en/Socure-Enables-Two-Top-5-US-Banks-to-Verify-Digital-Identities-with-Unprecedented-Accuracy" target="_blank" rel="noopener">BusinessWire</a></li>
+    <li><a href="https://www.gartner.com/reviews/market/data-and-analytics-others/vendor/socure/product/socure-kyc" target="_blank" rel="noopener">Gartner</a></li>
+    <li><a href="https://www.prnewswire.com/news-releases/socure-launches-the-industrys-most-accurate-synthetic-fraud-solution-301990951.html" target="_blank" rel="noopener">PR Newswire</a></li>
+    <li><a href="https://www.biometricupdate.com/202406/socure-examines-us100b-first-party-fraud-problem" target="_blank" rel="noopener">Biometric Update</a></li>
+    <li><a href="https://finovate.com/socure-and-proof-partner-to-fight-fraud-in-authorizations-contracts-and-forms/" target="_blank" rel="noopener">Finovate</a></li>
+    <li><a href="https://www.wsgr.com/en/insights/wilson-sonsini-advises-socure-on-dollar136-million-acquisition-of-effectiv.html" target="_blank" rel="noopener">Wilson Sonsini</a></li>
+  </ul>
+</section>
+
 <!-- ============ SKILLS ============ -->
 <section id="stack">
-  <div class="section-label">04 — Stack</div>
+  <div class="section-label">05 — Stack</div>
   <h2 class="section-title reveal">Tools, languages, and <em>territory</em>.</h2>
 
   <div class="skills-grid">
@@ -795,13 +1163,22 @@
 <!-- ============ CONTACT ============ -->
 <section id="contact" class="contact">
   <div class="contact-pretitle">— Let's talk</div>
-  <h2>Building something <br>worth building?</h2>
+  <h2>Building something <br><em>worth building?</em></h2>
   <a href="mailto:vybhav19@gmail.com" class="contact-mail">vybhav19@gmail.com</a>
+
+  <div class="contact-cta">
+    <a href="https://calendly.com/vykc19/quick-chat" target="_blank" rel="noopener" class="btn primary">
+      Book a 15-min chat <span class="arrow">→</span>
+    </a>
+    <a href="resume.pdf" target="_blank" rel="noopener" class="btn">
+      Download Resume <span class="arrow">↓</span>
+    </a>
+  </div>
 
   <div class="contact-links">
     <a href="https://www.linkedin.com/in/vybhavreddykc/" target="_blank" rel="noopener">LinkedIn ↗</a>
-    <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-    <a href="mailto:vybhav19@gmail.com">Email ↗</a>
+    <a href="https://github.com/vybhavk" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/vybhavreddykc/details/recommendations/" target="_blank" rel="noopener">References ↗</a>
     <a href="tel:+14193780005">+1 419 378 0005</a>
   </div>
 </section>
@@ -812,7 +1189,6 @@
 </footer>
 
 <script>
-  // Reveal on scroll
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -821,10 +1197,7 @@
       }
     });
   }, { threshold: 0.12 });
-
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // Smooth scroll already enabled via CSS
 </script>
 
 </body>
